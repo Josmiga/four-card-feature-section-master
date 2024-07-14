@@ -1,3 +1,8 @@
+:root{
+    --font-family: "Poppins", sans-serif;
+    --font-color: #4D4F62;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,4 +16,94 @@ html, body{
 
 body{
     background-color: #fafafa;
+}
+
+main{
+    padding: 85px 32px 0px;
+}
+
+.main-topics{
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.main-topics h2{
+    font-size: 24px;
+    font-weight: 275;
+    letter-spacing: 0.17px;
+}
+
+.main-topics h1{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.17px;
+}
+
+.main-topics p{
+    opacity: 0.50;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.10px;
+    line-height: 25px;
+    margin-top: 16px;
+}
+
+.principal-card-container{
+    margin-top: 76px;
+} 
+
+.internal-card-container{
+    margin-top: 25px;
+}
+
+.card{
+    width: 311px;
+    height: 222px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 15px 30px -11px rgba(130.85, 166.19, 210.28, 0.50);
+    padding: 27px 28px;
+    position: relative;
+}
+
+.cyan-card{
+    border-top: 3.55px solid #44d3d2;
+}
+
+.red-card{
+    border-top: 3.55px solid #e85556;
+}
+
+.yellow-card{
+    margin-top: 25px;
+    border-top: 3.55px solid #f9ae4d;
+}
+
+.blue-card{
+    margin-top: 25px;
+    border-top: 3.55px solid #549ef2;
+}
+
+.card-topic{
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-text{
+    color: var(--font-color);
+    font-family: var(--font-family);
+    opacity: 0.50;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+}
+
+.card-image{
+    position: absolute;
+    bottom: 27px;
+    right: 28px;
 }
