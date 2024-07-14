@@ -16,13 +16,22 @@ html, body{
 
 body{
     background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
-    padding: 85px 32px 0px;
+    padding: 85px 32px 78px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-topics{
+    width: 311px;
+    height: 161px;
     text-align: center;
     font-family: var(--font-family);
     color: var(--font-color);
@@ -50,6 +59,10 @@ main{
 }
 
 .principal-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin-top: 76px;
 } 
 
@@ -107,3 +120,37 @@ main{
     bottom: 27px;
     right: 28px;
 }
+
+footer {
+    color: var(--font-color);
+    font-size: 12px;
+    font-family: var(--font-family);
+    margin-bottom: 12px;
+  }
+  
+  footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--font-color);
+  }
+
+  @media only screen and (min-width: 1024px){
+    .main-topics{
+        width: 540px;
+        height: auto;
+    }
+
+    .principal-card-container{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 64px;
+    }
+
+    .internal-card-container{
+        margin: 0px 30px;
+    }
+
+    .yellow-card{
+        margin-top: 30px;
+    }
+  }
